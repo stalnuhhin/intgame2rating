@@ -36,7 +36,7 @@ public final class TeamResultFromBookConverterUtils {
                 results.put(teamName, new TeamResult());
             }
             TeamResult teamResult = results.get(teamName);
-            if (FileType.VERBOSE == fileType) {
+            if (FileType.RESULTS == fileType) {
                 TeamResultFromDataConverterUtils.fillVerbose(teamResult, data, titles);
             } else {
                 TeamResultFromDataConverterUtils.fillTeam(teamResult, data);

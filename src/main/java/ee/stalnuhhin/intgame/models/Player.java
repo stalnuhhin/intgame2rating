@@ -1,5 +1,7 @@
 package ee.stalnuhhin.intgame.models;
 
+import org.json.simple.JSONArray;
+
 import java.io.Serializable;
 
 public class Player implements Serializable {
@@ -7,6 +9,7 @@ public class Player implements Serializable {
     private String surname;
     private String patronym;
     private String ratingId;
+    private JSONArray possiblePlayers;
 
     public String getName() {
         return name;
@@ -38,5 +41,13 @@ public class Player implements Serializable {
 
     public void setRatingId(String ratingId) {
         this.ratingId = ratingId;
+    }
+
+    public JSONArray getPossiblePlayers() {
+        return possiblePlayers;
+    }
+
+    public void setPossiblePlayers(JSONArray possiblePlayers) {
+        this.possiblePlayers = possiblePlayers;
     }
 }

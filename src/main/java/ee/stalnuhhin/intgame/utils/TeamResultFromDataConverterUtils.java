@@ -13,7 +13,7 @@ public final class TeamResultFromDataConverterUtils {
     }
 
     public static String getTeamName(FileType fileType, Map<String, String> data) {
-        return data.get(fileType == FileType.VERBOSE ? "name" : "team_name");
+        return data.get(fileType == FileType.RESULTS ? "name" : "team_name");
     }
 
     public static void fillTeam(TeamResult result, Map<String, String> data) {
